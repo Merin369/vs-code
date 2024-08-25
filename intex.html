@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <input type="password">
+    <form>
+        <div >
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="name" maxlength="25" required>
+        </div>
+
+        <div >
+            <label>Email</label>
+            <input type="email" id="email" name="email" value="test@example.com" required>
+        </div>
+
+        <div >
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+        </div>
+
+        <div >
+            <label for="category">Category</label>
+            <select id="category" name="category" required>
+                <option value="student">Student</option>
+                <option value="employee">Employee</option>
+                <option value="freelancer" selected>Freelancer</option>
+            </select>
+        </div>
+
+        <div >
+            <label for="event-date">Event Date</label>
+            <input type="date" id="event-date" name="event-date" required>
+        </div>
+
+        <div >
+            <label>Tickets</label>
+            <div>
+                <input type="radio"  required>
+                <label >1 ticket</label>
+            </div>
+            <div>
+                <input type="radio" id="2-tickets" name="tickets" value="2" checked required>
+                <label for="2-tickets">2 tickets</label>
+            </div>
+            <div>
+                <input type="radio" id="3-tickets" name="tickets" value="3" required>
+                <label for="3-tickets">3 tickets</label>
+            </div>
+        </div>
+
+        <div >
+            <label for="payment">Online Payment</label>
+            <input type="checkbox" id="payment" name="payment">
+        </div>
+
+        <div >
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" placeholder="Enter additional notes"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // Focus on the email field when the page loads
+        document.getElementById('email').focus();
+    </script>
+</body>
+</html>

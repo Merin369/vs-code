@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <h1 style="text-decoration: underline;">Contact Us</h1>
+    <form>
+        <label for="name">Name:</label><br>
+        <input id="name" type="text" required placeholder="enter your name" ><br><br>
+
+        <label>Mobile Number:</label><br>
+        <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+        
+     inputmode="numeric" maxlength="10" placeholder="Enter your number" pattern="\d*" required> <br><br>
+           
+            <label for="communication">Type of Communication:</label><br>
+            <!-- dropdown -->
+        <select id="communication" required> 
+            <option>Sales</option>
+            <option selected>Service</option>
+            <option>Enquiry</option>
+            <option>Advertisement</option>
+            <option>Complaint</option>
+        </select><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" required rows="4" cols="50" autofocus></textarea><br><br>
+
+        <input type="submit" style="cursor: pointer;">
+    </form>
+
+    <h2><a href="news listining page.html">Back to News Listing</a></h2>
+</body>
+</html>
